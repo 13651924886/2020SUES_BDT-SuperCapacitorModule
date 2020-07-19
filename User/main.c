@@ -26,7 +26,7 @@ void BSP_init(void)
 {
 		delay_init();	    	 //延时函数初始化	 
 		USART3_DMA_Config();//USART3+DMA RX:PB11
-		ADCx_Init();
+		ADCx_Init();//ADC
 		CAN_mode_init(CAN_SJW_1tq, CAN_BS1_3tq, CAN_BS2_2tq, 6, CAN_Mode_Normal);
 		SuperCapControl_Init();
 		OLED_Init();
